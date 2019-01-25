@@ -24,7 +24,7 @@ import cucumber.api.java.en.When;
 
 public class GUIStepDefinition extends Lib{
 
-	public WebDriver driver;
+	public WebDriver driver=null;
 
 	@Before
 	public void initialize() {
@@ -38,10 +38,10 @@ public class GUIStepDefinition extends Lib{
 //		driver.get("https://www.facebook.com");
 //
 //		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		DesiredCapabilities dc=new DesiredCapabilities();
-		dc.setBrowserName("Chrome");
-		dc.setPlatform(Platform.WINDOWS);
-		driver=new RemoteWebDriver(new URL("http://localhost:5544/wd/hub"),dc);
+//		DesiredCapabilities dc=new DesiredCapabilities();
+//		dc.setBrowserName("Chrome");
+//		dc.setPlatform(Platform.WINDOWS);
+//		driver=new RemoteWebDriver(new URL("http://localhost:5544/wd/hub"),dc);
 	}
 
 	@Given("^user at facebook homepage$")
